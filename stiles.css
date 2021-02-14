@@ -1,0 +1,244 @@
+
+*{
+padding: 0;
+margin: 0;
+
+}
+
+body{
+
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	border-width: medium;
+}
+
+
+.menu_bar{
+    display: none;
+    
+}
+
+header nav{
+    background: rgba(0,0,0,.75);
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+    margin-top: 0;
+    padding-left: 34%;
+    
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    position:relative;
+}
+
+header nav ul li :hover{
+    background: #E6344A;
+}
+/*aqui ya se le dio su forma*/
+header nav ul li a{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+}
+
+header nav ul li a span{
+    margin-right: 10px;
+}
+
+header nav ul li:hover .children{
+    display: block;
+
+}
+
+header nav ul li .children{
+    display: none;
+    background: #960d0d49;
+    position: absolute;
+    width: 150%;
+    z-index: 1000;
+
+}
+
+header nav ul li .children li {
+    display: block;
+}
+
+/*Nuevoooooooooooo*/
+
+
+.tutu{
+    z-index: 1000;
+    max-width: 1000px;
+    width: 95%;
+    margin: 20px auto;
+    margin-top: 0px;
+}
+
+
+
+aside{
+    width: 200px;
+    float: right;
+    background:#e9e1e1 ;
+    padding: 8px;
+    border-radius: 15px;
+
+}
+
+aside img{
+    border-radius: 15px;
+ 
+}
+
+
+
+
+
+/*mobiles*/
+@media screen and (max-width:800px){
+   
+    header nav{
+        width:50%;
+        height: calc(100% - 80px);
+        padding-left: 0%;
+		margin:0;
+        position:fixed;
+        left: -100%;   /*esto es para ocultar estara oculto hasta que el java lo llame*/
+        overflow: scroll;
+       
+    }
+
+/*ajusta el texto*/
+header nav ul{
+    width:100%;
+    margin:0 0 0 2%;
+    padding:0;
+}
+
+
+/*le quita le float left al li y los pone en bloques con un 80 y ajusta el texto a la izquierda*/
+header nav ul li{
+    float: none;
+    display: block;
+    width: 80%;
+    text-align: left;
+    position: relative;
+    border-bottom: 1px solid rgba(255,255,255.5);
+    
+
+}
+/*ajusta los links a la izquierda*/
+header nav ul li a:link, header nav ul li a:visited{
+    text-align:left;
+}
+ /*muestra el boton escondido ocupando un width de 100 b*/
+.menu_bar{
+    display:block;
+    width:100%;
+    background: rgba(78, 185, 228, 0.178);
+    height:50px;
+    position: fixed;
+   
+
+}
+/*ya esto es configurando el botton*/
+.menu_bar .bt_menu {
+    display:block;
+    padding:15px 450px;
+    color:rgb(8, 214, 101);
+    text-decoration:none;
+    box-sizing:border-box;
+    position: fixed;
+
+    
+}
+
+
+header nav ul li a:link, header nav ul li a:visited{
+  /*esto es el size del icono*/
+    font-size: 1.2em;
+}
+header nav ul li .children{
+    width: 100%;
+    position: relative;
+
+}
+
+header nav ul li a{
+    display: block;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  body{
+padding: 80px;
+    }
+
+    .menu_bar{
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background: #E6344A;
+    }
+
+    .menu_bar .bt_menu{
+        display: block;
+        padding: 20px;
+        color: #fff;
+        overflow: hidden;
+        font-size: 25px;
+        font-weight:bold;
+        text-decoration: none;
+    }
+
+    header nav{
+        width: 80%;
+        height: calc(100% - 80px);
+        position: fixed;
+        margin: 0;
+        overflow: scroll;
+    }
+
+    header nav ul li{
+        display: block;
+        border-bottom: 1px solid rgba(255,255,255,.5);
+    }
+    header nav ul li a{
+        display: block;
+    }
+
+    header nav ul li ,.children{
+        width: 100%;
+        position: relative;
+    
+    }
+
+    header nav ul li {
+        margin-left: 20px;
+    }
+}
+*/
+
+  
